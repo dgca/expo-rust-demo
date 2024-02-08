@@ -1,4 +1,10 @@
-Process for running Rust code in Expo Module on iOS simluator
+# expo-rust-demo
+
+This is a demo of how to use Rust code in a React Native app using Expo Modules
+
+Check out the acommpanying [video tutorial 🎥](https://youtu.be/mErOZcKqR0c?si=BnGympilYsju7QcN)
+
+Questions or feedback? Reach out to me on Farcaster at [@typeof.eth](https://warpcast.com/typeof.eth)
 
 ## Setup
 
@@ -58,5 +64,15 @@ Process for running Rust code in Expo Module on iOS simluator
 	- `cargo ndk --target armv7-linux-androideabi --platform 31 -- build --release`
 	- `cargo ndk --target i686-linux-android --platform 31 -- build --release`
 	- `cargo ndk --target x86_64-linux-android --platform 31 -- build --release`
-
-...finish filling this out ^^
+- Move compiled Rust code to expo module
+  - Create a new folder at `/modules/my-rust-module/android/src/main/jniLibs`
+  - Copy the `.so` files from `/target/aarch64-linux-android/release` to `/modules/my-rust-module/android/src/main/jniLibs/arm64-v8a`
+  - Copy the `.so` files from `/target/armv7-linux-androideabi/release` to `/modules/my-rust-module/android/src/main/jniLibs/armeabi-v7a`
+  - Copy the `.so` files from `/target/i686-linux-android/release` to `/modules/my-rust-module/android/src/main/jniLibs/x86`
+  - Copy the `.so` files from `/target/x86_64-linux-android/release` to `/modules/my-rust-module/android/src/main/jniLibs/x86_64`
+- Update `MyRustModule.kt` to use Rust code
+  - Load library in `MyRustModule.kt`
+  - Add function type to `MyRustModule.kt`
+  - Define function in `MyRustModule.kt`
+- Start app in Android emulator
+  - `npm run android`
