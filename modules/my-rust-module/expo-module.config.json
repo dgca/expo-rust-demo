@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android", "web"],
+  "ios": {
+    "modules": ["MyRustModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.myrustmodule.MyRustModule"]
+  }
+}

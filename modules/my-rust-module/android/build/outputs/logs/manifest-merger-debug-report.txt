@@ -1,0 +1,14 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dan/dev/expo-rust/expo-rust-demo/modules/my-rust-module/android/src/main/AndroidManifest.xml:1:1-2:12
+INJECTED from /Users/dan/dev/expo-rust/expo-rust-demo/modules/my-rust-module/android/src/main/AndroidManifest.xml:1:1-2:12
+	package
+		INJECTED from /Users/dan/dev/expo-rust/expo-rust-demo/modules/my-rust-module/android/src/main/AndroidManifest.xml
+uses-sdk
+INJECTED from /Users/dan/dev/expo-rust/expo-rust-demo/modules/my-rust-module/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dan/dev/expo-rust/expo-rust-demo/modules/my-rust-module/android/src/main/AndroidManifest.xml
+INJECTED from /Users/dan/dev/expo-rust/expo-rust-demo/modules/my-rust-module/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/dan/dev/expo-rust/expo-rust-demo/modules/my-rust-module/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dan/dev/expo-rust/expo-rust-demo/modules/my-rust-module/android/src/main/AndroidManifest.xml

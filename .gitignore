@@ -33,3 +33,10 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Rust
+native_rust_lib/target
+native_rust_lib/**/*.h
+modules/**/*.h
+modules/**/*.a
+modules/**/*.so
